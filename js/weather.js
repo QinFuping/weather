@@ -21,8 +21,8 @@ $(document).ready(function(){
         request.onreadystatechange = function(){
             if(request.readyState == 4){
                 dataContainer.innerText='Loading...';
-                if(requset.status == 200){
-                    dataContainer.innerHTML=requset.responseText;
+                if(request.status == 200){
+                    dataContainer.innerHTML=request.responseText;
                 }
             }
         }
