@@ -17,7 +17,7 @@ $(document).ready(function(){
     }
     getData();
     function getData(){
-        request.open('GET','https://link.zhihu.com/?target=http%3A//sou.qq.com/online/get_weather.php%3Fcallback%3DWeather%26city%3Dnanjing',false);
+        request.open('GET','http://www.weather.com.cn/data/sk/101110101.html',false);
         request.onreadystatechange = function(){
             if(request.readyState == 4){
                 dataContainer.innerText='Loading...';
