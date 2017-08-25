@@ -18,6 +18,7 @@ $(document).ready(function(){
     getData();
     function getData(){
         request.open('GET','http://www.weather.com.cn/data/sk/101110101.html',false);
+        request.send(null);
         request.onreadystatechange = function(){
             if(request.readyState == 4){
                 dataContainer.innerText='Loading...';
@@ -26,6 +27,5 @@ $(document).ready(function(){
                 }
             }
         }
-        request.send();
     }
 });
