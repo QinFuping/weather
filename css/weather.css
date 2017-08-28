@@ -2,14 +2,14 @@ html,body,div,p,ul,li,textarea,input{
     margin: 0;
     padding: 0;
 }
-html,body,.main{
-    width: 100%;
-    height: 100%;
+html,body{
+    min-height: 100%;
 }
 body{
     font-family: "微软雅黑", arial;
-    color: #f4f4f4;
-    background-color: #333;
+    color: #f8f8f8;
+    background: url("../image/bg.jpg") left bottom repeat;
+    background-size: contain;
 }
 input,textarea{
     border: none;
@@ -42,18 +42,146 @@ a{
 }
 .main{
     width: 1000px;
+    height: 100%;
     margin: auto;
     padding-top: 30px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.place-wrapper{
+    padding-bottom: 20px;
+    position: relative;
+}
+.place-container{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.place-city{
+    height: 42px;
+    line-height: 42px;
+}
+.place{
+    background-color: rgba(0,0,0,0);
+    font-size: 30px;
+    font-weight: bold;
+    color: #f8f8f8;
+}
+.changePlace{
+    font-size: 12px;
+    cursor: pointer;
+    color: #0053a1;
+}
 .time-wrapper{
     font-weight: bold;
+    padding-top: 17px;
 }
 .time{
     font-size: 18px;
 }
 .week{
     font-size: 14px;
+}
+.place-tips{
+    padding: 0px 12px 0 100px;
+    font-size: 13px;
+    min-height: 150px;
+}
+.place-tips-wrapper{
+    font-size: 18px;
+}
+.place-tips-temp{
+    font-size: 32px;
+}
+.place-tips-weather{
+    padding-left: 10px;
+}
+.place-tips-temps{
+    font-size: 12px;
+    font-weight: normal;
+}
+.place-tips-list{
+    font-weight: normal;
+    font-size: 15px;
+}
+.place-tips-list span,.place-tips-list p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.place-tips-list>span{
+    color: #0053a1;
+    font-weight: bold;
+}
+.weather-tips-winddirect,.weather-tips-pm25-text,.weather-tips-quality-texxt{
+    padding-left: 16px;
+}
+.iname{
+    padding-right: 4px;
+}
+.ivalue{
+    padding-left: 4px;
+}
+.place-tips-list>p{
+    color: #0053a1;
+    font-size: 12px;
+}
+.weather-wrapper{
+    padding: 6px;
+    background-color: rgba(255,255,255,.2);
+}
+.weather{
+    float: left;
+    width: 14.285714285714286%;
+    padding: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.weather-cont{
+    height: 390px;
+    background-color: rgba(255,255,255,.4);
+    padding: 4px 6px;
+    color: #f4f4f4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.weather-day,.weather-night{
+    padding-top: 16px;
+    line-height: 1.8;
+}
+.detail{
+    font-size: 12px;
+    font-weight: 100;
+    padding-left: 8px;
+    color: #cae8f6;
+}
+.weather-title-container{
+    text-align: center;
+}
+.weather-title{
+    color: #0051a0;
+}
+.weather-title-small{
+    font-size: 12px;
+    color: #6181e2;
+}
+.weather-day-text{
+    font-size: 12px;
+    color: #333333;
+}
+.weather-weather,.weather-weather2{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.weather-weather2, .weather-weather,.weather-wind-container,.weather-maxtemp,.weather-mintemp{
+    text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+.weather-windpower,.weather-windpower2{
+    font-size: 12px;
+    white-space: nowrap;
 }
