@@ -10,15 +10,220 @@
 </head>
 <body>
     <div class="main">
-        <div class="top">
-            <div class="time-wrapper">
-                <p class="time"><span id="month">00</span>-<span id="date">00</span></p>
-                <p class="week">星期<span id="day"></span></p>
-                <p id="data"></p>
+        <div class="place-wrapper">
+            <div class="place-container">
+                <div class="place-city">
+                    <input type="button" class="place" id="place" value="">
+                </div>
+                <p class="changePlace" id="changePlace">切换城市</p>
+                <div class="time-wrapper">
+                    <p class="time"><span id="month">00</span>-<span id="date">00</span></p>
+                    <p class="week" id="week">星期五</p>
+                </div>
+            </div>
+            <div class="place-tips">
+                <div class="place-tips-wrapper">
+                    <span><span class="place-tips-temp" id="place-tips-temp"></span>℃</span>
+                    <span class="place-tips-temps">[&nbsp;<span id="place-tips-minTemp"></span>℃~<span id="place-tips-maxTemp"></span>℃&nbsp;]</span>
+                    <span class="place-tips-weather" id="place-tips-weather"></span>
+                    <span class="weather-tips-winddirect"></span>
+                    <span class="weather-tips-windpower"></span>
+                    <span class="weather-tips-pm25-text">PM2.5：</span>
+                    <span class="weather-tips-pm25"></span>
+                    <span class="weather-tips-quality-texxt">空气质量：</span>
+                    <span class="weather-tips-quality"></span>
+                    <div id="place-tips"></div>
+                </div>
             </div>
         </div>
+        <div class="weather-container">
+            <ul class="weather-wrapper clearFloat">
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title">今天</p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="weather">
+                    <div class="weather-cont">
+                        <div class="weather-title-container">
+                            <p class="weather-title"></p>
+                            <p class="weather-title-small"></p>
+                        </div>
+                        <div class="weather-day">
+                            <p class="weather-day-text">[白天]</p>
+                            <p class="weather-weather"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect"></p>
+                                <p class="weather-windpower"></p>
+                            </div>
+                            <p class="weather-maxtemp"></p>
+                        </div>
+                        <div class="weather-night">
+                            <p class="weather-day-text">[夜间]</p>
+                            <p class="weather-weather2"></p>
+                            <div class="weather-wind-container">
+                                <p class="weather-winddirect2"></p>
+                                <p class="weather-windpower2"></p>
+                            </div>
+                            <p class="weather-mintemp"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-min.js"></script>
     <script src="js/weather.js"></script>
 </body>
 </html>
