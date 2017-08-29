@@ -48,11 +48,11 @@ $(document).ready(function(){
     getWeather();
     function getWeather(){
         $.ajax({
-            url:'https://jisutianqi.market.alicloudapi.com/weather/query?',
+            url:'http://jisutianqi.market.alicloudapi.com/weather/query?',
             type:'GET',
             async:true,    //是否异步
             timeout:5000,    //超时时间
-            dataType:'jsonp',    //json/xml/html/script/jsonp/text
+            dataType:'json',    //json/xml/html/script/jsonp/text
             beforeSend:function(xhr){
                 xhr.setRequestHeader("Authorization", "APPCODE " + "e7ab85ec27a14e40a7afffcf21250b14");
             },
